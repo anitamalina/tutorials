@@ -23,8 +23,10 @@
   },
   "scripts": {
     "build": "node tools/builder",
+    "download-assets": "node tools/utils/download-assets",
     "start": "node tools/dev-server",
-    "download-assets": "node tools/utils/download-assets"
+    "test": "npm run typecheck",
+    "typecheck": "npm run typecheck --workspaces --if-present"
   },
   "devDependencies": {
     "@highlightjs/cdn-assets": "^11.11.1",
